@@ -1,5 +1,3 @@
-import { MonitorSmartphone, Search, Settings, Shirt, ShoppingCart } from "lucide-react";
-
 import {
   Sidebar,
   SidebarContent,
@@ -12,40 +10,7 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
 import LoggedOutButton from "./logged_out_button";
-
-// Menu items.
-const items = [
-  {
-    title: "Men",
-    url: "#",
-    icon: Shirt,
-  },
-  {
-    title: "Women",
-    url: "#",
-    icon: Shirt,
-  },
-  {
-    title: "Devices",
-    url: "#",
-    icon: MonitorSmartphone,
-  },
-  {
-    title: "Cart",
-    url: "#",
-    icon: ShoppingCart,
-  },
-  {
-    title: "Search",
-    url: "#",
-    icon: Search,
-  },
-  {
-    title: "Settings",
-    url: "#",
-    icon: Settings,
-  },
-];
+import { sidebarMenuIstems } from "./sidebar-items";
 
 export function AppSidebar() {
   return (
@@ -55,7 +20,7 @@ export function AppSidebar() {
           <SidebarGroupLabel>Test EC site</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
-              {items.map((item) => (
+              {sidebarMenuIstems.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
                     <a href={item.url}>
