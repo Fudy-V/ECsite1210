@@ -5,5 +5,5 @@ export const user1Mock = {
   password: "pass1234",
   role: "consumer",
   createdAt: "2024.12.10",
-  updateAt: "2024.12.11",
+  updatedAt: "2024.12.11",
 };
