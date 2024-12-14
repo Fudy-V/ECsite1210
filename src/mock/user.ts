@@ -3,7 +3,7 @@ export const user1Mock = {
   name: "Takashi",
   email: "takashi@mail.com",
   password: "pass1234",
-  roll: "consumer",
-  createdAt: 2024 - 12 - 10,
-  updateAt: 2024 - 12 - 11,
+  role: "consumer",
+  createdAt: "2024.12.10",
+  updatedAt: "2024.12.11",
 };
